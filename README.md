@@ -1,6 +1,6 @@
 Neste repositório, temos como objetivo versionar um jogo que fizemos em node.js em equipe, e expandi-lo para uma "Empresa".
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-Atualização 1.0 — Sistema de Dinheiro
+Versão: 1.0.0 — Sistema de Dinheiro
 
 Nesta atualização, foi implementado um sistema financeiro no jogo, permitindo que o jogador receba dinheiro pelas entregas de pizza e utilize seus ganhos para abastecer a moto.
 
@@ -14,5 +14,5 @@ Validação de saldo: impede o abastecimento quando o jogador não possui dinhei
 
 O sistema foi integrado às funções entregarPizza() e abastecerMoto(), adicionando uma nova mecânica de gerenciamento de recursos ao jogo.
 
-Versão: 1.0.0
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------
