@@ -15,6 +15,7 @@ const rl = readline.createInterface({
 let combustivel = 100;
 let entregasRealizadas = 0;
 let totalEntregas = 5;
+let dinheiro = 20;
 
 // Função mostrarStatus:
 
@@ -39,15 +40,36 @@ function entregarPizza() {
     entregasRealizadas++;
     
     console.log(`\nEntrega feita consumo de: ${consumo}L.`);
+
+    const pagamento = Math.floor(Math.random() * 31) + 20
+    dinheiro = dinheiro + pagamento
+
+    console.log(`\n Dinheiro recebido pela entrega: ${pagamento}`)
+    console.log(`\n Dinheiro Total: ${dinheiro}`)
 }
 
 // Função abastecerMoto():
 
 function abastecerMoto() {
-    // Adiciona 20L respeitando o limite máximo de 100L
+    const preco = 30
+
+     if (dinheiro < preco) {
+        console.log('\nDinheiro insuficiente para abastecer!');
+        return;
+    }
+
+    if (combustivel >= 100) {
+        console.log('\nO tanque já está cheio!');
+        return;
+    }
+
+    dinheiro = dinheiro - preco
+
     combustivel = Math.min(100, combustivel + 20);
     totalEntregas++;
     
+    console.log(`\nVocê pagou ${preco} pelo combustivel`)
+    console.log(`\n Dinheiro Total: R$${dinheiro}`)
     console.log('\n+20L Abastecidos, aumentou em +1 entrega.');
 }
 
