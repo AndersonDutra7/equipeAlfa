@@ -16,3 +16,17 @@ O sistema foi integrado às funções entregarPizza() e abastecerMoto(), adicion
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Versão: 1.0.1 — Quebra e Conserto da Moto
+
+Nesta atualização, foi implementado um sistema de quebra e conserto da moto, adicionando um novo desafio ao jogo.
+
+**Quebra da moto:** existe 10% de chance de a moto quebrar durante uma entrega, impedindo o jogador de realizar novas entregas.
+
+**Conserto:** para voltar a realizar entregas, o jogador precisa pagar R$ 20 pelo conserto da moto.
+
+**Validação de dinheiro:** o sistema verifica se o jogador possui dinheiro suficiente antes de realizar o conserto.
+
+**Controle da moto:** enquanto a moto estiver quebrada, não será possível realizar entregas até que ela seja consertada.
+
+O sistema foi integrado às funções `entregarPizza()` e `consertarMoto()`, adicionando uma nova mecânica de imprevistos e gerenciamento de recursos ao jogo.
